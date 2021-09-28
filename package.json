@@ -12,5 +12,13 @@
   "license": "ISC",
   "devDependencies": {
     "nanogen": "^0.4.2"
+  },
+  "dependencies": {
+    "ansi-regex": "^5.0.1",
+    "glob-parent": "^5.1.2",
+    "marked": "^0.7.0",
+    "set-value": "^4.0.1",
+    "trim-newlines": "^3.0.1",
+    "yargs-parser": "^13.1.2"
   }
 }
