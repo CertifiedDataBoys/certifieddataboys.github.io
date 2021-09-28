@@ -1,6 +1,6 @@
 body {
     font-family: 'Merriweather', serif;
-    background-color:#e6e6e6
+    background-color: #e6e6e6
 }
 
 .navbar ul {
@@ -14,14 +14,17 @@ body {
     right: 0;
     overflow: hidden;
 }
+
 .nav-title li {
     float: left;
     margin: 0pt 0pt;
     padding: 0pt 5pt;
 }
+
 .nav-items li {
     display: inline;
 }
+
 .nav-items li a {
     display: inline;
     color: #efefef;
@@ -31,6 +34,7 @@ body {
     padding: 5pt 5pt;
     text-decoration: none;
 }
+
 .nav-items li a:hover {
     color: black;
     background-color: #efefef;
@@ -46,6 +50,7 @@ body {
     float: left;
     text-align: center;
 }
+
 .news-date {
     margin: 10pt 25pt;
     float: center;
