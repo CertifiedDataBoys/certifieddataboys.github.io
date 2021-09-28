@@ -20,7 +20,7 @@ jobs:
           npm install
           npm run build
       - name: Deploy 🚀
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           single-commit: true
