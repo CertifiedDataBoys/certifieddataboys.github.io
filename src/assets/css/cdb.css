@@ -3,10 +3,13 @@ body {
     background-color: #e6e6e6
 }
 
+
+/* Portrait navbar & main top margin: */
+
 .navbar ul {
     list-style-type: none;
     margin: 0;
-    padding: 5;
+    padding-bottom: 25;
     background-color: black;
     position: fixed;
     top: 0;
@@ -16,22 +19,22 @@ body {
 }
 
 .nav-title li {
-    float: left;
-    margin: 0pt 0pt;
-    padding: 0pt 5pt;
+    visibility: hidden;
 }
 
 .nav-items li {
-    display: inline;
+    display: inline-block;
 }
 
 .nav-items li a {
-    display: inline;
     color: #efefef;
     background-color: #777777;
     text-align: center;
     margin: 5pt 5pt;
-    padding: 5pt 5pt;
+    padding-top: 25pt;
+    padding-bottom: 10pt;
+    padding-left: 4pt;
+    padding-right: 4pt;
     text-decoration: none;
 }
 
@@ -40,10 +43,64 @@ body {
     background-color: #efefef;
 }
 
+.main {
+    margin-top: 55pt;
+}
+
+
+/* Landscape navbar & main top margin: */
+
+@media only screen and (orientation: landscape) {
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 5;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+    .nav-title li {
+        visibility: visible;
+        float: left;
+        margin: 0pt 0pt;
+        padding: 0pt 5pt;
+    }
+    .nav-title-mobile li {
+        visibility: hidden;
+    }
+    .nav-items li {
+        display: inline;
+    }
+    .nav-items li a {
+        color: #efefef;
+        background-color: #777777;
+        text-align: center;
+        margin: 5pt 5pt;
+        padding: 5pt 5pt;
+        text-decoration: none;
+    }
+    .nav-items li a:hover {
+        color: black;
+        background-color: #efefef;
+    }
+    .main {
+        margin-top: 35pt;
+    }
+}
+
+
+/* dotted lines */
+
 .dotted {
     border: 2pt dotted #777777;
     border-style: none none dotted;
 }
+
+
+/* news styling */
 
 .news-title {
     margin: 10pt 25pt;
@@ -58,10 +115,52 @@ body {
     font-weight: normal;
 }
 
-sup {
-    text-decoration: underline;
+
+/* about us styling for portrait displays */
+
+.about-us-entry h2 {
+    float: left;
+    left: 0;
+    width: 80%;
 }
 
-.main {
-    margin-top: 35pt;
+.about-us-entry img {
+    float: right;
+    width: 16%;
+    height: auto;
+    margin: 5pt 0pt;
+    padding: 2% 2%;
+    border-top-left-radius: 15% 25%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 25% 15%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+.about-us-entry p {
+    padding: 15pt 15pt;
+}
+
+
+/* about us image styling ---
+    change image scale on landscape */
+
+@media only screen and (min-width: 768px) {
+    .about-us-entry h2 {
+        float: left;
+        left: 0;
+        width: 86%;
+    }
+    .about-us-entry img {
+        float: right;
+        width: 10%;
+        height: auto;
+    }
+}
+
+.about-us-entry p {
+    position: inline;
+}
+
+sup {
+    text-decoration: underline;
 }
